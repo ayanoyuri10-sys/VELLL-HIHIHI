@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Official Link Saya</title>
+  <title>Official Link</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
       text-align: center;
       color: white;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
     }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     .container {
       margin-top: 60px;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
     }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
     img {
       width: 120px;
       border-radius: 50%;
       border: 3px solid white;
+      margin-bottom: 15px;
     }
+
     h1 {
-      margin: 15px 0 5px;
+      margin: 10px 0;
     }
+
     p {
       opacity: 0.8;
       margin-bottom: 30px;
     }
+
     .link {
       display: block;
       width: 80%;
       max-width: 300px;
-      margin: 10px auto;
+      margin: 12px auto;
       padding: 12px;
       background: white;
       color: #2a5298;
@@ -38,33 +59,25 @@
       border-radius: 10px;
       font-weight: bold;
       transition: 0.3s;
+      box-shadow: 0 0 0px rgba(255,255,255,0);
     }
+
     .link:hover {
-      background: #ddd;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.7);
     }
-  </style>):@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+  </style>
 </head>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  color: white;
-  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
-  background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
-}
+
+<body>
 
 <div class="container">
-  <img src="SAVE_20260302_050236.jpg" alt="Foto Profil">
+  <img src=""SAVE_20260302_050236 alt="Foto Profil">
   <h1>VELL HIHIHI</h1>
-  <p>Official Account | Trusted JB</p>
+  <p>Official Account | JB CUY</p>
 
-  <a class="link" href="https://chat.whatsapp.com/BRqjrriFBKY10A6vGL772b?mode=gi_t" target="_blank">🔥 Link GB</a>
-  <a class="link" href="https://whatsapp.com/channel/0029VbC1CvlIt5s3Swp9hS2b" target="_blank">📢 Link Saluran</a>
+  <a class="link" href="#" target="_blank">🔥 https://chat.whatsapp.com/BRqjrriFBKY10A6vGL772b?mode=gi_t</a>
+  <a class="link" href="#" target="_blank">📢 https://chat.whatsapp.com/BRqjrriFBKY10A6vGL772b?mode=gi_t</a>
   <a class="link" href="https://wa.me/6285124333002" target="_blank">💬 WhatsApp</a>
 </div>
 
