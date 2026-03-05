@@ -42,9 +42,21 @@
     .link:hover {
       background: #ddd;
     }
-  </style>
+  </style>):@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 </head>
-<body>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
 
 <div class="container">
   <img src="SAVE_20260302_050236.jpg" alt="Foto Profil">
