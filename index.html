@@ -1,89 +1,97 @@
-<!DOCTYPE html>
+
+
+      <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Data Ultimate Vell</title>
     <style>
-        /* Mengatur background halaman menjadi hitam dan posisi ke tengah */
+        /* Background Oren Gradasi yang modern */
         body {
-            background-color: #000000;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff8c00, #ffb347);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 20px;
             display: flex;
             justify-content: center;
+            min-height: 100vh;
         }
 
-        /* Wadah utama agar tampilannya rapi seperti di HP */
+        /* Wadah utama */
         .container {
             width: 100%;
             max-width: 400px;
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Jarak antar kotak */
+            gap: 18px; /* Jarak antar elemen */
+            margin-top: 20px;
         }
 
-        /* Gaya untuk Banner Gambar */
-        .banner-img {
+        /* Gaya untuk Banner Gambar biar lebih menyatu */
+        .banner.jpg {
             width: 100%;
-            border-radius: 10px; /* Sudut membulat */
-            object-fit: cover; /* Pastikan gambar terisi penuh tanpa distorsi */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            object-fit: cover;
         }
 
-        /* Gaya untuk teks perkenalan */
+        /* Teks perkenalan dengan efek kaca (putih transparan) */
         .intro-box {
-            background-color: #dbe371; /* Warna kuning kehijauan */
-            color: black;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #d35400; /* Teks warna oren gelap */
             font-weight: bold;
             font-style: italic;
             text-align: center;
             padding: 15px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-family: 'Georgia', serif; /* Font dekoratif miring */
+            border-radius: 15px;
+            font-size: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        /* Wadah untuk tombol WhatsApp yang bersebelahan */
+        /* Wadah untuk tombol WhatsApp */
         .wa-container {
             display: flex;
-            gap: 10px;
+            gap: 12px;
         }
 
-        /* Pengaturan dasar untuk semua tombol (link) */
+        /* Gaya dasar semua tombol biar bentuknya kapsul modern */
         .btn {
             text-decoration: none;
-            color: black;
+            font-weight: bold;
             text-align: center;
-            padding: 15px 10px;
-            border-radius: 10px;
-            font-size: 16px;
+            padding: 16px 10px;
+            border-radius: 30px; /* Bentuk membulat seperti kapsul */
+            font-size: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: opacity 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        /* Efek saat tombol disentuh/diklik */
-        .btn:hover {
-            opacity: 0.8;
+        /* Efek ditekan (karena kamu pake HP) */
+        .btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        /* Gaya khusus tombol WhatsApp */
+        /* Tombol WhatsApp (Warna Putih Elegan) */
         .wa-btn {
-            background-color: #9cf542; /* Hijau terang */
-            flex: 1; /* Membagi dua ruang sama rata */
+            background-color: #ffffff;
+            color: #d35400;
+            flex: 1;
         }
 
-        /* Gaya khusus tombol Saluran Transaksi */
+        /* Tombol Saluran Transaksi (Warna Gelap Kontras) */
         .trans-btn {
-            background-color: #b9b855; /* Warna hijau zaitun pudar */
-            font-size: 18px;
+            background-color: #2c3e50;
+            color: #ffffff;
         }
 
-        /* Gaya khusus tombol Pembayaran */
+        /* Tombol Pembayaran (Warna Hitam Pekat) */
         .pay-btn {
-            background-color: #6a82a0; /* Warna biru keabuan */
+            background-color: #1a1a1a;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -91,27 +99,25 @@
 
     <div class="container">
         
-        <!-- Bagian Banner Gambar yang Baru -->
-        <!-- Pastikan nama file gambar di bawah ini ('banner.jpg') sama persis dengan nama file yang kamu upload ke GitHub -->
-        <img src="banner.jpg" alt="Banner Ultimate Vell" class="banner.jpg">
+        <!-- Gambar Banner Kamu -->
+        <img src="banner.jpg" alt="Banner Ultimate Vell" class="banner-img">
 
         <!-- Bagian Intro -->
         <div class="intro-box">
-            "halo saya ultimate vell ini adalah website data saya"
+            "Halo saya Ultimate Vell, ini adalah website data saya."
         </div>
 
         <!-- Tombol WhatsApp Bersebelahan -->
         <div class="wa-container">
-            <!-- Ganti tanda '#' dengan link WhatsApp aslimu, contoh: Wa.me/6283863366275 -->
-            <a href="#" class="btn wa-btn">link ke nomer<br>WhatsApp 1<Wa.me/6283863366275>
-            <a href="#" class="btn wa-btn">link ke nomer<br>WhatsApp 2<https://Wa.me/+62895325977434>
+            <a href="Wa.me/6283863366275" class="btn wa-btn">WhatsApp 1</a>
+            <a href="https://Wa.me/+62895325977434" class="btn wa-btn">WhatsApp 2</a>
         </div>
 
         <!-- Tombol Saluran Transaksi -->
-        <a href="#" class="btn trans-btn">link saluran transaksi<https://whatsapp.com/channel/0029VbC1CvlIt5s3Swp9hS2b>
+        <a href="https://whatsapp.com/channel/0029VbC1CvlIt5s3Swp9hS2b" class="btn trans-btn">Saluran Transaksi</a>
 
         <!-- Tombol Saluran Pembayaran -->
-        <a href="#" class="btn pay-btn">Link saluran<br>Pembayaran<https://whatsapp.com/channel/0029VbCPtREKWEKtTB3wta1K>
+        <a href="https://whatsapp.com/channel/0029VbCPtREKWEKtTB3wta1K" class="btn pay-btn">Saluran Pembayaran</a>
 
     </div>
 
