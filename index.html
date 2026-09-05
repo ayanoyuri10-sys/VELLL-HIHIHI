@@ -1,124 +1,161 @@
-
-
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Data Ultimate Vell</title>
+    <title>Raken Game Official</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Background Oren Gradasi yang modern */
-        body {
-            background: linear-gradient(135deg, #ff8c00, #ffb347);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
+            padding: 0;
+            font-family: 'Arial Black', Impact, sans-serif;
         }
 
-        /* Wadah utama */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* CARA GANTI BACKGROUND: Ganti 'bg.jpg' dengan nama/link gambar kamu */
+            background: url('6eab1f4f76b45b856ce94aa1ae5da18d (2).jpg') no-repeat center center/cover #ffffff;
+        }
+
         .container {
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
-            gap: 18px; /* Jarak antar elemen */
-            margin-top: 20px;
-        }
-
-        /* Gaya untuk Banner Gambar biar lebih menyatu */
-        .banner.jpg {
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            object-fit: cover;
-        }
-
-        /* Teks perkenalan dengan efek kaca (putih transparan) */
-        .intro-box {
-            background-color: rgba(255, 255, 255, 0.9);
-            color: #d35400; /* Teks warna oren gelap */
-            font-weight: bold;
-            font-style: italic;
-            text-align: center;
-            padding: 15px;
-            border-radius: 15px;
-            font-size: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        /* Wadah untuk tombol WhatsApp */
-        .wa-container {
-            display: flex;
-            gap: 12px;
-        }
-
-        /* Gaya dasar semua tombol biar bentuknya kapsul modern */
-        .btn {
-            text-decoration: none;
-            font-weight: bold;
-            text-align: center;
-            padding: 16px 10px;
-            border-radius: 30px; /* Bentuk membulat seperti kapsul */
-            font-size: 15px;
-            display: flex;
             align-items: center;
+            gap: 16px;
+        }
+
+        /* Foto Profil Lingkaran Merah */
+        .profile-circle {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background-color: #e50000;
+            display: flex;
             justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+            font-style: italic;
+            overflow: hidden;
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        /* Efek ditekan (karena kamu pake HP) */
-        .btn:active {
-            transform: scale(0.95);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        /* Tombol WhatsApp (Warna Putih Elegan) */
-        .wa-btn {
-            background-color: #ffffff;
-            color: #d35400;
-            flex: 1;
+        /* Banner Website Official */
+        .btn-banner {
+            width: 100%;
+            background-color: #e50000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 17px;
+            font-style: italic;
+            text-decoration: none;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
         }
 
-        /* Tombol Saluran Transaksi (Warna Gelap Kontras) */
-        .trans-btn {
-            background-color: #2c3e50;
-            color: #ffffff;
+        /* Button WhatsApp Style */
+        .btn-wa {
+            width: 100%;
+            background-color: #e50000;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            padding: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
         }
 
-        /* Tombol Pembayaran (Warna Hitam Pekat) */
-        .pay-btn {
-            background-color: #1a1a1a;
-            color: #ffffff;
+        .btn-wa:hover, .btn-banner:hover {
+            transform: scale(1.02);
+        }
+
+        .wa-icon-box {
+            width: 52px;
+            height: 52px;
+            background-color: white;
+            border: 3px solid #e50000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e50000;
+            font-size: 30px;
+            flex-shrink: 0;
+        }
+
+        .wa-details {
+            flex-grow: 1;
+            text-align: center;
+            padding-right: 15px;
+        }
+
+        .wa-title {
+            font-size: 17px;
+            font-style: italic;
+            font-weight: bold;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .wa-subtitle {
+            font-size: 11px;
+            font-style: italic;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            display: block;
+            margin-top: 2px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        
-        <!-- Gambar Banner Kamu -->
-        <img src="banner.jpg" alt="Banner Ultimate Vell" class="banner-img">
-
-        <!-- Bagian Intro -->
-        <div class="intro-box">
-            "Halo saya Ultimate Vell, ini adalah website data saya."
+        <div class="profile-circle">
+            <img src="profile.jpg" alt="Profile" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span style="display:none;">Profile</span>
         </div>
 
-        <!-- Tombol WhatsApp Bersebelahan -->
-        <div class="wa-container">
-            <a href="https://Wa.me/+6283863366275" class="btn wa-btn">WhatsApp 1</a>
-            <a href="https://Wa.me/+62895325977434" class="btn wa-btn">WhatsApp 2</a>
-        </div>
+        <a href="https://raken-game.id" class="btn-banner" target="_blank">
+            official raken game.id website
+        </a>
 
-        <!-- Tombol Saluran Transaksi -->
-        <a href="https://whatsapp.com/channel/0029VbC1CvlIt5s3Swp9hS2b" class="btn trans-btn">Saluran Transaksi</a>
+        <a href="https://Wa.me/+62895325977434" class="btn-wa" target="_blank">
+            <div class="wa-icon-box">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="wa-details">
+                <span class="wa-title">nomer raken game.id</span>
+                <span class="wa-subtitle">"langsung diarahkan ke WhatsApp"</span>
+            </div>
+        </a>
 
-        <!-- Tombol Saluran Pembayaran -->
-        <a href="https://whatsapp.com/channel/0029VbCPtREKWEKtTB3wta1K" class="btn pay-btn">Saluran Pembayaran</a>
-
+        <a href="https://whatsapp.com/channel/0029VbDlg7nKrWQwOkTpVP1W" class="btn-wa" target="_blank">
+            <div class="wa-icon-box">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="wa-details">
+                <span class="wa-title">saluran testimoni raken</span>
+                <span class="wa-subtitle">"langsung diarahkan ke WhatsApp"</span>
+            </div>
+        </a>
     </div>
 
 </body>
